@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Our Love Story 💖</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="vertical-scroll-path">
+    <div class="vertical-dotted-line"></div>
+    <div id="bee-progress" class="bee-cursor">🐝</div>
+</div>
+
+    <section class="hero">
+        <h1>Our Awesomesauce relationship timer</h1>
+        <div id="counter">
+            <p>We are together for:</p>
+            <div id="timer">Loading our time...</div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="grid">
+            <div class="polaroid">
+                <img src="assets/fav.jpg" alt="A">
+                <p>MWAHHHHHHHHHHHH</p>
+            </div>
+            <div class="polaroid">
+                <img src="assets/arts.jpg" alt="A">
+                <p>So cute when youre focusing</p>
+            </div>
+            <div class="polaroid">
+                <img src="assets/1.jpg" alt="A">
+                <p>I love you</p>
+            </div>
+            
+        </div>
+    </section>
+    <section class="love-letter-container">
+        <div class="notebook-paper">
+            <div class="red-line"></div>
+            <div class="letter-content">
+                <h3>My sweet honeybee,</h3>
+                <p>
+                    I looooooove you soooo so so so incredibly much. Being your boyfriend is the
+                    greatest experience of my life. You make me the happiest I've ever been. Your
+                    love and sweet caring is irreplacable and I love it so much. I cherish it. I
+                    cherish you my sweetness. I love everything about you. I love you 7.
+                </p>
+                <p>Forever your bunny, <br> Rado ❤️</p>
+            </div>
+            <div class="sticker-stamp">💌</div>
+        </div>
+    </section>
+    <div id="password-overlay">
+        <div class="login-card">
+            <div class="heart-icon">🔒</div>
+            <h2>A Secret Space</h2>
+            <p>What's the place we held each other for the first time?</p>
+            <input type="text" id="password-input" placeholder="Type the secret word..." />
+            <button onclick="checkPassword()">Unlock Our Memories ✨</button>
+            <p id="error-msg" style="display:none; color: #d88181; margin-top: 10px;">Oops! Try again, love. ❤️</p>
+        </div>
+    </div>
+
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/airport.jpg">
+                <p>eeping at the airport</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/2.jpg">
+                <p>yo</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/4.jpg">
+                <p>Dinner timee</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/5.jpg">
+                <p>On the train....</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/6.jpg">
+                <p>FISH PARTYYYYYYY</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/7.jpg">
+                <p>Family pic <3</p>
+            </div>
+            <div class="polaroid sticker-style"><img src="assets/8.jpg">
+                <p>Waiting for the trainn</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="map-section">
+    <h2 class="handwritten">Travelling the world together!! 🌎</h2>
+    <p>Pics from our trips!</p>
+    <div class="map-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/80/World_map_-_low_resolution.svg" class="base-map">
+        
+        <div class="city-point" style="top: 26.8%; left: 51%;" onclick="showMapPhoto('bratislava')">
+            <span class="sparkle">📍</span>
+            <div class="map-popup" id="bratislava">
+                <img src="assets/ba.png">
+                <p>Bratislava: First meetup! ❤️</p>
+            </div>
+        </div>
+
+        <div class="city-point" style="top: 25.5%; left: 47.4%;" onclick="showMapPhoto('point2')">
+            <span class="sparkle">📍</span>
+            <div class="map-popup" id="point2">
+                <img src="assets/22.jpg">
+                <p>Antwerpen: 22nd birthday! ❤️</p>
+            </div>
+        </div>
+
+        <div class="city-point" style="top: 25.5%; left: 51.5%;" onclick="showMapPhoto('point3')">
+            <span class="sparkle">📍</span>
+            <div class="map-popup" id="point3">
+                <img src="assets/krakow.jpg">
+                <p>Krakow: First trip together! ❤️</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="at-home-section">
+    <div class="corkboard-header">
+        <h2 class="handwritten">Living together!! (only temporarily FOR NOW)</h2>
+        <p>Pics from our home(s)!</p>
+    </div>
+    
+    <div class="corkboard">
+        <div class="home-photo pin-red" style="top: 20px; left: 10%;">
+            <img src="assets/4.jpg">
+            <span>DINNERRRRR</span>
+        </div>
+
+        <div class="home-photo tape-blue" style="top: 50px; left: 40%;">
+            <img src="assets/yello.jpg">
+            <span>i look high</span>
+        </div>
+
+        <div class="home-photo magnet-star" style="top: 10px; left: 70%;">
+            <img src="assets/silly.jpg">
+            <span>SURPRISE KISS</span>
+        </div>
+
+        <div class="home-photo pin-yellow" style="top: 250px; left: 25%;">
+            <img src="assets/leaving.jpg">
+            <span>time to go :(</span>
+        </div>
+        
+        <div class="home-photo tape-pink" style="top: 220px; left: 60%;">
+            <img src="assets/couch.jpg">
+            <span>chilling on le couch</span>
+        </div>
+    </div>
+</section>
+
+<section class="theater-section">
+    <h2 class="handwritten">Our list of things to watch! 🎬</h2>
+    <div class="ticket-container">
+        <div class="movie-card sticker-style">
+            <img src="assets/starwars.webp">
+            <div class="movie-info">
+                <h3>Star Wars</h3>
+                <p>Yes.. I didnt watch starwars.. yes.. we can watch it together..</p>
+            </div>
+        </div>
+        <div class="movie-card sticker-style">
+            <img src="assets/burlesque.jpg">
+            <div class="movie-info">
+                <h3>Burlesque</h3>
+                <p>Guess why i asked!</p>
+            </div>
+        </div>
+        <div class="movie-card sticker-style">
+            <img src="assets/tmmm.jpg">
+            <div class="movie-info">
+                <h3>The Marvelous Mrs. Maisel</h3>
+                <p>Apparently a really good series</p>
+            </div>
+        </div>
+        <div class="movie-card sticker-style">
+            <img src="assets/sherlock.jpg">
+            <div class="movie-info">
+                <h3>Sherlock</h3>
+                <p>Didnt think I forgot did you nyehehehehe</p>
+            </div>
+        </div>
+        <p>...and many more but i cant think of them from the top of my head WE WILL ADD THEM HERE FROM NOW ON</p>
+    </div>
+</section>
+<section class="reasons-section">
+    <h2 class="handwritten">Things I want (remember?)</h2>
+    
+    <div class="reasons-container">
+        <div class="reasons-cloud">
+            <span class="reason-tag">My love</span>
+            <span class="reason-tag">My pretty girl</span>
+            <span class="reason-tag">My baby</span>
+            <span class="reason-tag">My best friend</span>
+            <span class="reason-tag">My sweetheart</span>
+            <span class="reason-tag">My honey</span>
+            <span class="reason-tag">My light</span>
+            <span class="reason-tag">My sun</span>
+            <span class="reason-tag">My happiness</span>
+            <span class="reason-tag">My meaning of life</span>
+            <span class="reason-tag">My sweet girlfriend</span>
+            <span class="reason-tag">My awesome partner</span>
+            <span class="reason-tag">My wonderful friend</span>
+            <span class="reason-tag">My beautiful woman</span>
+        </div>
+
+        <div class="her-divider">your...</div>
+
+        <div class="moments-grid">
+            <div class="moment-card">your words</div>
+            <div class="moment-card">your laughs</div>
+            <div class="moment-card">your hugs</div>
+            <div class="moment-card">your kisses</div>
+            <div class="moment-card">your love</div>
+            <div class="moment-card">your hands in my hands</div>
+            <div class="moment-card">your hair in my hands</div>
+            <div class="moment-card">your voice in my ears</div>
+            <div class="moment-card">your eyes looking at mine</div>
+            <div class="moment-card">your cheeks turning red</div>
+            <div class="moment-card">your waking up next to me</div>
+            <div class="moment-card">your mouth widening in smiles</div>
+            <div class="moment-card">your lips against mine</div>
+            <div class="moment-card">your hands in my hair</div>
+            <div class="moment-card">your skin touching my skin</div>
+            <div class="moment-card">your smell</div>
+            <div class="moment-card">your arms wrapped around me</div>
+            <div class="moment-card">your neverending understanding</div>
+        </div>
+        <p>...and many other of your neverending qualities...</p>
+    </div>
+</section>
+
+<div class="decorations-layer">
+    <span class="deco-sticker" style="top: 5%; left: 20%;">🐰</span>
+    <span class="deco-sticker" style="top: 15%; left: 10%;">🐝</span>
+    <span class="deco-sticker lily" style="top: 24%; left: 15%;">🪷</span>
+    <span class="deco-sticker" style="top: 35%; left: 10%;">🐇</span>
+    <span class="deco-sticker" style="top: 50%; left: 12%;">🌸</span>
+    <span class="deco-sticker" style="top: 55%; left: 14%;">🐝</span>
+    <span class="deco-sticker lily" style="top: 65%; left: 13.5%;">🪷</span>
+    <span class="deco-sticker" style="top: 77%; left: 12.5%;">🐰</span>
+    <span class="deco-sticker" style="top: 90%; left: 16%;">🐝</span>
+    <span class="deco-sticker lily" style="top: 97%; left: 15%;">🌸</span>
+
+    <span class="deco-sticker" style="top: 8%; right: 20%;">🐝</span>
+    <span class="deco-sticker lily" style="top: 18%; right: 10%;">🌸</span>
+    <span class="deco-sticker" style="top: 29%; right: 13%;">🐰</span>
+    <span class="deco-sticker lily" style="top: 38%; right: 12%;">🪷</span>
+    <span class="deco-sticker" style="top: 50%; right: 16.5%;">🐝</span>
+    <span class="deco-sticker" style="top: 58%; right: 12%;">🐇</span>
+    <span class="deco-sticker lily" style="top: 68%; right: 12.5%;">🌸</span>
+    <span class="deco-sticker" style="top: 78%; right: 18%;">🐝</span>
+    <span class="deco-sticker lily" style="top: 90%; right: 18%;">🪷</span>
+    <span class="deco-sticker" style="top: 98%; right: 17.5%;">🐰</span>
+</div>
+<div id="player" style="display:none;"></div>
+<div class="final-celebration">
+    <p class="handwritten">Miss me? :P</p>
+    <button id="petal-button" class="heart-btn">❤️</button>
+</div>
+
+<div id="petal-container"></div>
+    
+</body>
+<script>
+    function updateTimer() {
+        const startDate = new Date(2025, 9, 6, 0, 58, 0);
+        const now = new Date();
+
+        let years = now.getFullYear() - startDate.getFullYear();
+        let months = now.getMonth() - startDate.getMonth();
+        let days = now.getDate() - startDate.getDate();
+        let hours = now.getHours() - startDate.getHours();
+        let minutes = now.getMinutes() - startDate.getMinutes();
+        let seconds = now.getSeconds() - startDate.getSeconds();
+
+        if (seconds < 0) {
+            seconds += 60;
+            minutes--;
+        }
+        if (minutes < 0) {
+            minutes += 60;
+            hours--;
+        }
+        if (hours < 0) {
+            hours += 24;
+            days--;
+        }
+        if (days < 0) {
+            const lastMonth = new Date(now.getFullYear(), now.getMonth(), 0).getDate();
+            days += lastMonth;
+            months--;
+        }
+        if (months < 0) {
+            months += 12;
+            years--;
+        }
+
+        const weeks = Math.floor(days / 7);
+        const remainingDays = days % 7;
+
+        const format = (num, unit) => `
+        <div class="time-unit">
+            <span class="number">${num}</span>
+            <span class="label">${num === 1 ? unit : unit + 's'}</span>
+        </div>
+    `;
+
+        document.getElementById('timer').innerHTML =
+            format(years, 'Year') +
+            format(months, 'Month') +
+            format(weeks, 'Week') +
+            format(remainingDays, 'Day') +
+            format(hours, 'Hour') +
+            format(minutes, 'Minute') +
+            format(seconds, 'Second');
+    }
+
+    setInterval(updateTimer, 1000);
+    updateTimer();
+
+    function checkPassword() {
+        const userInput = document.getElementById('password-input').value.toLowerCase().trim();
+        const secretWord = "bratislava airport";
+        const errorMessage = document.getElementById('error-msg'); 
+
+        if (userInput === secretWord) {
+            document.getElementById('password-overlay').classList.add('hidden');
+
+            setTimeout(() => {
+                if (isPlayerReady) {
+                    player.playVideo();
+                } else {
+                    console.log("Waiting for handshake...");
+                    setTimeout(() => { if (player) player.playVideo(); }, 1000);
+                }
+            }, 100);
+        } else {
+            errorMessage.style.display = 'block';
+            const card = document.querySelector('.login-card');
+            card.style.animation = "shake 0.5s";
+            setTimeout(() => { card.style.animation = "" }, 500);
+            document.getElementById('password-input').value = "";
+        }
+    }
+
+    window.onload = function () {
+        localStorage.removeItem("isUnlocked");
+        document.getElementById('password-overlay').style.display = 'none';
+    }
+
+    document.addEventListener('click', (e) => {
+        const ripple = document.createElement('div');
+        ripple.className = 'ripple';
+        ripple.style.left = `${e.clientX}px`;
+        ripple.style.top = `${e.clientY}px`;
+        document.body.appendChild(ripple);
+
+        setTimeout(() => {
+            ripple.remove();
+        }, 1000);
+    });
+
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    var isPlayerReady = false;
+
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+            height: '0',
+            width: '0',
+            videoId: '6_9QpRPZqDY',
+            playerVars: {
+                'autoplay': 0,
+                'loop': 1,
+                'playlist': '6_9QpRPZqDY',
+                'origin': window.location.origin
+            },
+            events: {
+                'onReady': onPlayerReady,
+                'onError': onPlayerError
+            }
+        });
+    }
+
+    function onPlayerReady(event) {
+        console.log("YouTube Handshake Successful");
+        isPlayerReady = true;
+        event.target.setVolume(10);
+    }
+
+    function onPlayerError(e) {
+    }
+
+    function showMapPhoto(cityId) {
+    document.querySelectorAll('.map-popup').forEach(p => p.classList.remove('active'));
+    
+    const popup = document.getElementById(cityId);
+    popup.classList.add('active');
+    
+    setTimeout(() => {
+        popup.classList.remove('active');
+    }, 5000);
+}
+
+window.onscroll = function() {
+    updateVerticalBee();
+};
+
+function updateVerticalBee() {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    
+    const scrolled = (winScroll / height) * 100;
+    
+    const bee = document.getElementById("bee-progress");
+    if (bee) {
+        bee.style.top = scrolled + "%";
+        
+        const wobble = Math.sin(winScroll / 100) * 10;
+        bee.style.transform = `translateX(calc(-50% + ${wobble}px)) `;
+    }
+}
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.style.opacity = "1";
+            entry.target.style.transform = "translateY(0)";
+        }
+    });
+}, { threshold: 0.1 });
+
+document.querySelectorAll('.reason-tag, .moment-card').forEach(item => {
+    item.style.opacity = "0";
+    item.style.transform = "translateY(20px)";
+    item.style.transition = "all 0.6s ease-out";
+    observer.observe(item);
+});
+
+document.getElementById('petal-button').addEventListener('click', function() {
+    const webhookURL = "https://discordapp.com/api/webhooks/1453076964922491005/15g5BXrfEZhUTK0RkW5fiRUw3qoEU5TfVAaxMfvkg9_2nbGXoffpYf37uXzesbBXCWXA";
+    
+    fetch(webhookURL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+            content: "❤️ **I miss youuuuuuu**"
+        })
+    });
+
+    const container = document.getElementById('petal-container');
+    const shapes = ['🌸', '🪷', '💖', '✨'];
+    
+    for (let i = 0; i < 60; i++) {
+        setTimeout(() => {
+            const petal = document.createElement('div');
+            petal.className = 'petal';
+            petal.innerText = shapes[Math.floor(Math.random() * shapes.length)];
+            petal.style.left = Math.random() * 100 + 'vw';
+            petal.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            container.appendChild(petal);
+            setTimeout(() => { petal.remove(); }, 5000);
+        }, i * 80);
+    }
+
+    this.innerText = '💖';
+    this.style.transform = "scale(1.5)";
+    
+});
+</script>
+
+</html>
