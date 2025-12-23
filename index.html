@@ -65,7 +65,7 @@
             <h2>A Secret Space</h2>
             <p>What's the place we held each other for the first time?</p>
             <input type="text" id="password-input" placeholder="Type the secret word..." />
-            <button onclick="checkPassword()">Unlock Our Memories ✨</button>
+            <button onclick="checkPassword()">Unlock!!!</button>
             <p id="error-msg" style="display:none; color: #d88181; margin-top: 10px;">Oops! Try again, love. ❤️</p>
         </div>
     </div>
@@ -845,7 +845,7 @@
 
     window.onload = function () {
         localStorage.removeItem("isUnlocked");
-        document.getElementById('password-overlay').style.display = 'none';
+        document.getElementById('password-overlay').style.display = 'absolute';
     }
 
     document.addEventListener('click', (e) => {
