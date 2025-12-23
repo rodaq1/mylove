@@ -502,20 +502,20 @@ button:hover {
 
 .at-home-section {
     padding: 80px 20px;
-    background: #fdf6ec; /* Soft warm background */
+    background: #fdf6ec; 
     text-align: center;
 }
 
 .corkboard {
     position: relative;
     max-width: 1000px;
-    height: 600px; /* Fixed height for the "pinned" look */
+    height: 600px; 
     margin: 0 auto;
     background-image: radial-gradient(#dcb899 1px, transparent 1px);
-    background-size: 20px 20px; /* Subtle cork texture */
+    background-size: 20px 20px; 
     background-color: #f3e5d8;
     border-radius: 15px;
-    border: 12px solid #b38b6d; /* Wooden frame */
+    border: 12px solid #b38b6d; 
     box-shadow: inset 0 0 50px rgba(0,0,0,0.1);
 }
 
@@ -646,10 +646,9 @@ button:hover {
 .reasons-section {
     padding: 100px 10% 200px 10%;
     text-align: center;
-    background: #fffafa; /* Very light rose tint */
+    background: #fffafa; 
 }
 
-/* Floating Word Cloud */
 .reasons-cloud {
     display: flex;
     flex-wrap: wrap;
@@ -675,7 +674,6 @@ button:hover {
     color: white;
 }
 
-/* The Big Divider */
 .her-divider {
     font-size: 5rem;
     font-family: 'Gochi Hand', cursive;
@@ -684,7 +682,6 @@ button:hover {
     opacity: 0.6;
 }
 
-/* The Moments Grid */
 .moments-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -705,7 +702,6 @@ button:hover {
     min-height: 80px;
 }
 
-/* Make them look slightly messy/natural */
 .moment-card:nth-child(odd) { transform: rotate(-1deg); }
 .moment-card:nth-child(even) { transform: rotate(1.5deg); }
 
@@ -734,7 +730,6 @@ button:hover {
     100% { transform: scale(1); }
 }
 
-/* Petal Styling */
 .petal {
     position: fixed;
     top: -50px;
