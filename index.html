@@ -579,6 +579,28 @@
         </div>
     </div>
 
+<div id="valentine-overlay" class="popup-overlay" style="display: none;">
+    
+    <div id="envelope-btn" class="centered-envelope-btn" onclick="openLetterCard()">
+        <span>Hi baby 💌</span>
+        <p>Click to open your letter...</p>
+    </div>
+
+    <div id="letter-card" class="popup-card" style="display: none;">
+        <div class="close-popup" onclick="closeValentine()">✕</div>
+        <div class="popup-heart-header">🐝 ❤️ 🐰</div>
+        <h2 class="handwritten" style="font-family: 'Dancing Script', cursive; font-size: 2.2rem; color: #ff6b8b; margin-bottom: 10px;">My Honeybee</h2>
+        
+        <div class="popup-letter-body">
+            <p>I miss you. I know things are how they are. I just want you to know</p>
+            <p>that no matter what happens, I will be here for you. If you wish to take some time apart, I fully respect it.</p>
+            <p>I will always love you. If there's anything you want me to do, I will do it. I just want you to feel happy, that's all that matters to me.</p>
+        </div>
+        
+        <button class="popup-close-btn" onclick="closeValentine()">Enter Our Space ❤️</button>
+    </div>
+</div>
+
     <section class="map-section">
         <h2 class="handwritten">Travelling the world together!! 🌎</h2>
         <p>Pics from our trips!</p>
@@ -693,6 +715,7 @@
             </div>
         </div>
 
+
     </section>
     <p>...and many more but i cant think of them from the top of my head WE WILL ADD THEM HERE FROM NOW ON</p>
 
@@ -780,47 +803,7 @@
     </div>
     <div id="petal-container"></div>
 
-    <div class="valentine-letter" onclick="openValentine()">
-        💌
-        <span class="letter-label">Click thissss</span>
-    </div>
 
-    <div id="valentine-overlay" class="valentine-overlay">
-        <div class="valentine-card">
-            <button class="close-btn" onclick="closeValentine()">✕</button>
-            <h2>My honeybee… 🐝</h2>
-            <p>
-                Will you be my Valentine? 💖<br><br>
-                I know I messed it up the first time, so I wanted to make it up to you.<br><br>
-                I love you so much. Please make your choice. If you choose well theres a surprise awaiting youuuu!
-            </p>
-            <div class="valentine-buttons">
-                <button class="yes-btn" id="yes-btn" onclick="valentineYes()">YES 💕</button>
-                <button class="no-btn" onclick="valentineNo()">HMPF NO! 💔</button>
-            </div>
-        </div>
-    </div>
-
-    <div id="yes-overlay" class="valentine-overlay" style="display:none;">
-        <div class="valentine-card mini-gallery">
-            <button class="close-btn" onclick="closeYesGallery()">✕</button>
-            <h2>My Valentine 💖</h2>
-            <h3>YAYYYY GOOD CHOICE I LOVE YOU YIPPEE</h3>
-            <button id="reveal-btn" class="heart-btn" onclick="revealPics()">Wheres my surprise 👀</button>
-                <p id="textextra" style="display: none;">heres your surpriseeee <333</p>
-
-            <div class="mini-polaroids" id="mini-polaroids" style="display:none;">
-                <div class="polaroid">
-                    <img src="assets/us.png" alt="Us">
-                    <p>You & me 💕</p>
-                </div>
-                <div class="polaroid">
-                    <img src="assets/limited.jpg" alt="me">
-                    <p>Never before seen pic of me >:P</p>
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 <script>
     function updateTimer() {
@@ -886,6 +869,12 @@
 
         if (userInput === secretWord) {
             document.getElementById('password-overlay').classList.add('hidden');
+            
+            // --- NEW: Triggers the dark letter overlay right after login ---
+            setTimeout(() => {
+                document.getElementById('password-overlay').style.display = 'none';
+                document.getElementById('valentine-overlay').style.display = 'flex';
+            }, 500);
 
             setTimeout(() => {
                 if (isPlayerReady) {
@@ -902,6 +891,17 @@
             setTimeout(() => { card.style.animation = "" }, 500);
             document.getElementById('password-input').value = "";
         }
+    }
+
+    // --- NEW: Handles moving from huge envelope to the letter text smoothly ---
+    function openLetterCard() {
+        document.getElementById('envelope-btn').style.display = 'none';
+        document.getElementById('letter-card').style.display = 'block';
+    }
+
+    // --- MODIFIED: Completely shuts down the overlay so she can see the timer/maps ---
+    function closeValentine() {
+        document.getElementById('valentine-overlay').style.display = 'none';
     }
 
     window.onload = function () {
@@ -1038,13 +1038,7 @@
 
     });
 
-    function openValentine() {
-        document.getElementById('valentine-overlay').style.display = 'flex';
-    }
 
-    function closeValentine() {
-        document.getElementById('valentine-overlay').style.display = 'none';
-    }
 
     function valentineYes() {
         closeValentine();
