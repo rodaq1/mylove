@@ -571,7 +571,7 @@
                 <p>FISH PARTYYYYYYY</p>
             </div>
             <div class="polaroid sticker-style"><img src="assets/7.jpg">
-                <p>Family pic <3< /p>
+                <p>Family pic &lt;3</p>
             </div>
             <div class="polaroid sticker-style"><img src="assets/8.jpg">
                 <p>Waiting for the trainn</p>
@@ -870,14 +870,10 @@
         const errorMessage = document.getElementById('error-msg');
 
         if (userInput === secretWord) {
+            // Immediately show the valentine overlay
+            document.getElementById('valentine-overlay').style.display = 'flex';
             document.getElementById('password-overlay').classList.add('hidden');
             
-            // Seamlessly open the gorgeous letter overlay right after login
-            setTimeout(() => {
-                document.getElementById('password-overlay').style.display = 'none';
-                document.getElementById('valentine-overlay').style.display = 'flex';
-            }, 500);
-
             // Play music if YouTube API finished shaking hands
             setTimeout(() => {
                 if (isPlayerReady && player && typeof player.playVideo === 'function') {
@@ -921,7 +917,8 @@
         ripple.className = 'ripple';
         ripple.style.left = `${e.clientX}px`;
         ripple.style.top = `${e.clientY}px`;
-        document.body.appendChild(ripple);
+        const container = document.body;
+        if(container) container.appendChild(ripple);
 
         setTimeout(() => { ripple.remove(); }, 1000);
     });
@@ -980,7 +977,7 @@
     }
 
     window.onscroll = function () {
-        updateVerticalBee();
+        if (document.getElementById("bee-progress")) updateVerticalBee();
     };
 
     function updateVerticalBee() {
